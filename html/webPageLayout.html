@@ -1,0 +1,82 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .col-1 {
+    background: beige;
+    flex: 1;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > article {
+    flex: 3;
+    min-height: 60vh;
+  }
+  .content > aside {
+    background: beige;
+    flex: 1;
+  }
+  header, footer {
+    background:purple;
+    height: 20vh;
+    font-size :50px;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+  p,li{
+    font-size: 16px;
+    line-height: 3;
+    letter-spacing: 1px;
+  }
+</style>
+<body>
+  <nav class="col-1">List
+      <ul>
+          <li>EXO</li>
+          <li>BTS</li>
+          <li>Super Junior</li>
+      </ul>
+  </nav>
+  <div class="col-2">
+  	<header>Welcome to kpop world</header>
+    <main class="content">
+    <article><h2>Exo</h2>
+
+        <p>Exo is a South Korean-Chinese boy band based in Seoul, consisting of nine members: Xiumin, 
+            Suho, Lay, Baekhyun, Chen, Chanyeol, D.O., Kai and Sehun. The band was formed by SM
+             Entertainment in 2011 and debuted in 2012.</p>
+    </article>
+    <article>
+        <h2>Bts</h2>
+
+        <p> BTS, also known as the Bangtan Boys, is a seven-member South Korean boy band that began formation in 2010 and debuted in 2013 under Big Hit Entertainment. The septet—composed of RM, Jin, 
+            Suga, J-Hope, Jimin, V, and Jungkook—co-writes and co-produces much of their own output</p>
+    </article>
+    <article>
+        <h2>Super Junior</h2>
+
+        <p>Super Junior, also known as SJ or SuJu, is a South Korean boy band debuted on November 6, 2005, 
+            by producer Lee Soo-man of SM Entertainment.</p>
+    </article></article>
+
+    <aside>Aside</aside>
+    </main>
+  	<footer>Thanks for visiting the page !!!!</footer>
+  </div>
+</body>
